@@ -45,7 +45,19 @@ class plgHikashopValidate_free_order extends JPlugin
 		$send_confirmation = $this->params->get('send_confirmation', 1);
 
 		//-------------------------------------------------
-
+		//$db1 = JFactory::getDBO();
+		//$query = "UPDATE "
+		//$query = "SELECT `credit_cost` FROM `#__hikashop_product` WHERE `product_id` = ";
+		//$query .= $this->row->product_id;
+		//$query .= " LIMIT 1";
+		//$db1->setQuery($query);
+		//try {
+		//	$res1 = $db1->query();
+		//	$row = mysql_fetch_array($res1);
+		//	echo $row['credit_cost']. " Credits";
+		//}catch(Exception $e){
+		//	echo "Credit Unknown";
+		//}
 		//-------------------------------------------------
 
 		if(!$send_confirmation && $order->order_status == 'confirmed') {

@@ -289,7 +289,6 @@ if(empty($this->element->variants) || $this->params->get('characteristic_display
 ?>
 		<span id="hikashop_product_id_<?php echo $variant_name;?>">
 			<input type="hidden" name="product_id" value="<?php echo $variant->product_id; ?>" />
-			<input type="block" name="Credit" value="ASS" />
 		</span>
 <?php
 		if(!empty($this->fields)) {

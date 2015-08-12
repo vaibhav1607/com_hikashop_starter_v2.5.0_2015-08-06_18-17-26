@@ -203,7 +203,6 @@ if(!empty($this->element->main->characteristics)) {
 <?php			} ?>
 						<input type="hidden" name="hikashop_cart_type_<?php echo $this->row->product_id.'_0'; ?>" id="hikashop_cart_type_<?php echo $this->row->product_id.'_0'; ?>" value="cart"/>
 						<input type="hidden" name="product_id" value="<?php echo $this->row->product_id; ?>" />
-						<input type="block" name="Credit" value="ASS" />
 						<input type="hidden" name="module_id" value="0" />
 						<input type="hidden" name="add" value="1"/>
 						<input type="hidden" name="ctrl" value="product"/>

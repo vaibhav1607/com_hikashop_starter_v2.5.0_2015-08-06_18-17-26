@@ -174,7 +174,6 @@ defined('_JEXEC') or die('Restricted access');
 	?>
 	<span id="hikashop_product_id_main" class="hikashop_product_id_main">
 		<input type="hidden" name="product_id" value="<?php echo $this->element->product_id; ?>" />
-		<input type="block" name="Credit" value="ASS" />
 	</span>
 	<?php
 	if(!empty($this->element->extraData->rightEnd))

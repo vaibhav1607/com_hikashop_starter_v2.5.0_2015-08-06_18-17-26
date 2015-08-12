@@ -38,7 +38,6 @@ defined('_JEXEC') or die('Restricted access');
 
 	<input type="hidden" name="cart_id" value="<?php echo JRequest::getInt('cart_id','0');?>" />
 	<input type="hidden" name="product_id" value="<?php echo JRequest::getInt('product_id','0');?>" />
-	<input type="block" name="Credit" value="ASS" />
 	<input type="hidden" name="cart_type" value="<?php echo JRequest::getString('cart_type','cart');?>" />
 	<?php echo JHTML::_( 'form.token' ); ?>
 </form>

@@ -94,7 +94,6 @@ if($this->config->get('show_quantity_field') < 2) {
 ?>
 		<input type="hidden" name="hikashop_cart_type_<?php echo $this->row->product_id.'_'.$module_id; ?>" id="hikashop_cart_type_<?php echo $this->row->product_id.'_'.$module_id; ?>" value="cart"/>
 		<input type="hidden" name="product_id" value="<?php echo $this->row->product_id; ?>" />
-		<input type="block" name="Credit" value="ASS" />
 		<input type="hidden" name="module_id" value="<?php echo $module_id; ?>" />
 		<input type="hidden" name="add" value="1"/>
 		<input type="hidden" name="ctrl" value="product"/>

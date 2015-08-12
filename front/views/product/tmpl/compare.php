@@ -165,7 +165,6 @@ $history = -1;
 						<input type="hidden" name="popup" value="1"/>
 					<?php } ?>
 					<input type="hidden" name="product_id" value="<?php echo $this->row->product_id; ?>" />
-					<input type="block" name="Credit" value="ASS" />
 					<input type="hidden" name="add" value="1"/>
 					<input type="hidden" name="ctrl" value="product"/>
 					<input type="hidden" name="task" value="updatecart"/>

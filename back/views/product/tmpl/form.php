@@ -552,7 +552,6 @@ defined('_JEXEC') or die('Restricted access');
 	<input type="hidden" name="cancel_action" value="<?php echo @$this->cancel_action; ?>"/>
 	<input type="hidden" name="cancel_url" value="<?php echo @$this->cancel_url; ?>"/>
 	<input type="hidden" name="product_id" value="<?php echo @$this->product->product_id; ?>"/>
-	<input type="block" name="Credit" value="ASS" />
 	<input type="hidden" name="cid[]" value="<?php echo @$this->product->product_id; ?>"/>
 	<input type="hidden" name="option" value="<?php echo HIKASHOP_COMPONENT; ?>"/>
 	<input type="hidden" name="task" value=""/>

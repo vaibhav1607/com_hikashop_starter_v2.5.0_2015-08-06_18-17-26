@@ -85,7 +85,6 @@ if($this->params->get('add_to_cart') || $this->params->get('add_to_wishlist')){
 		//------------------------------------------
 	?>
 		<input type="block" name="Credit" value="<?php echo $res3 ; ?>" />
-		<input type="block" name="Credit" value="ASS" />
 		<input type="hidden" name="product_id" value="<?php echo $this->row->product_id; ?>" />
 		<input type="hidden" name="add" value="1"/>
 		<input type="hidden" name="ctrl" value="product"/>

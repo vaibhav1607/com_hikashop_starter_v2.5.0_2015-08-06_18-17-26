@@ -39,8 +39,22 @@ if(isset($this->row->product_msrp) && @$this->row->product_msrp > 0.0 && JReques
 	<span class="hikashop_product_price_full<?php echo $class; ?>">
 	<?php
 	if(empty($this->row->prices)){
+		//------------------------------------
+		//Showing credit in place of keyword 'Free'
 		//echo JText::_('FREE_PRICE');
-		echo JText::_("TEST_FIELD");
+		$db1 = JFactory::getDBO();
+		$query = "SELECT `credit_cost` FROM `#__hikashop_product` WHERE `product_id` = ";
+		$query .= $this->row->product_id;
+		$query .= " LIMIT 1";
+		$db1->setQuery($query);
+		try {
+			$res1 = $db1->query();
+			$row = mysql_fetch_array($res1);
+			echo $row['credit_cost']. " Credits";
+			}catch(Exception $e){
+			echo "Credit Unknown";
+		}
+		//------------------------------------
 	}else{
 		$first = true;
 		echo JText::_('PRICE_BEGINNING');
